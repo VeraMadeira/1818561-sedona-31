@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a>
+        <a href="index.html">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Туристический городок Седона">
         </a>
         <ul>
@@ -58,22 +58,27 @@
                   <ul>
               </fieldset>
               <fieldset>
-                <p>Стоимость в сутки, ₽:</p>
+                <legend>Стоимость в сутки, ₽:</legend>
               <p>
                 <label for="appointment-min"></label>
-                <input id="appointment-min" type="text" name="min" placeholder="от 0">
+                <input id="appointment-min" type="text" name="min" placeholder="0">
                 <label for="appointment-max"></label>
-                <input id="appointment-max" type="text" name="max" placeholder="До 3000">
+                <input id="appointment-max" type="text" name="max" placeholder="3000">
               </p>
             </fieldset>
+            <div>
+              <button type="submit">Меньше</button>
+              <button type="submit">Больше</button>
+            </div>
               <button type="submit">Показать</button>
             </form>
           </section>
+          <section>
           <h3>Найдено:3</h3>
           <p>Сортировка:</p>
           <ul>
             <li>
-                По цене
+              <a href="catalog.html">По цене</a> 
               </li>
             <li>
               <a href="catalog.html">По типу</a>
@@ -82,52 +87,49 @@
               <a href="catalog.html">По рейтингу</a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <a href="#">По возрастанию</a>
+            </li>
+            <li>
+              <a href="#">По убыванию</a>
+            </li>
+          </ul>
+        </section>
           <section>
             <h2>Результаты выбора</h2>  
             <ul>
               <li>
                 <a href="hotel.html">
                   <h3>Amara Resort & Spa</h3>
-                  <p>
                     <img src="img/hotel-1.jpg" width="220" height="165" alt="Amara Resort & Spa">
-                  </p>
                 </a>
                 <p>Гостиница</p>
-                <p>
                   от 4000 ₽
-                  <button type="button">Подробнее</button>
-                  <button type="button">Забронировать</button>
-                </p>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
                 <p>Рейтинг: 8,5</p>
               </li>      
               <li>
                 <a href="hotel.html">
                   <h3>Desert Quail Inn</h3>
-                  <p>
                     <img src="img/hotel-2.jpg" width="220" height="165" alt="Desert Quail Inn">
-                  </p>
                 </a>
                 <p>Мотель</p>
-                <p>
                   от 3000 ₽
-                  <button type="button">Подробнее</button>
-                  <button type="button">Забронировать</button>
-                </p>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
                 <p>Рейтинг: 8,9</p>
               </li>   
               <li>
                 <a href="hotel.html">
                   <h3>Villas at Poco Diablo</h3>
-                  <p>
                     <img src="img/hotel-3.jpg" width="220" height="165" alt="Villas at Poco Diablo">
-                  </p>
                 </a>
                 <p>Апартаменты</p>
-                <p>
                   от 2000 ₽
-                  <button type="button">Подробнее</button>
-                  <button type="button">Забронировать</button>
-                </p>
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
                 <p>Рейтинг: 9,2</p>
               </li> 
             </section>

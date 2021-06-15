@@ -1,0 +1,128 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-gray: #EEEEEE;
+    --basic-brown: #766357;
+    --basic-blue: #81B3D2;
+   
+    --special: #663d15;
+  }
+
+  body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+  }
+  .main-navigation {
+    font-weight: 700;
+    background-color: var(--basic-white);
+  }
+  .site-navigation {
+    list-style: none;
+  }
+  .site-navigation a {
+    text-decoration: none;
+    color: var(--basic-black);
+  }
+  .welcome {
+    background-image: url("img/background-index.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  .features h2 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .features p {
+    text-align: center;
+  }
+  .features-list {
+    list-style: none;
+  }
+  
+  .feature-item-white {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    background-position: 0 0;
+    text-align: center;
+    line-height: 21px;
+  }
+  .feature-item-white h3 {
+    text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .features-list-nested {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    background-position: 0 0;
+    text-align: center;
+    list-style: none;
+    line-height: 21px;
+  }
+  .features-list-nested h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .feature-item {
+    text-align: center;
+    line-height: 21px;
+}
+  .feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+.search-hotel {
+    text-align: center;
+    line-height: 24px;
+}
+.search-hotel h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-open-form {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-brown);
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+  }
+.footer-contacts {
+    font-size: 21px;
+    font-weight: 700;
+}
+.footer-contacts a {
+   text-decoration: none;
+   color: var(--basic-black);
+}
+.footer-social {
+    text-align: center;
+  }
+.footer-social ul {
+    list-style: none;
+  }
+.social-button {
+    background-color: var(--basic-blue);
+  }

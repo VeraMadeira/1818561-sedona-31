@@ -4,7 +4,12 @@
     --basic-gray: #EEEEEE;
     --basic-brown: #766357;
     --basic-blue: #81B3D2;
-    --special: #663d15;
+    --special-extrabrown: #503E33;
+    --special-darkbrown: #604E43;
+    --special-extrablue: #5496BD;
+    --special-darkblue: #669EC0;
+    --special-darkgray: #F2F2F2;
+    --special-extragray: #666666;
 }
 
 body {
@@ -142,6 +147,184 @@ body {
   list-style: none;
 }
 
+.footer-social a {
+  text-decoration: none;
+}
+
 .social-button {
   background-color: var(--basic-blue);
+}
+
+.information:hover {
+  color: var(--basic-blue);
+}
+
+.information:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation-current {
+  color: var(--basic-brown);
+}
+
+.page-catalog {
+  max-width: 100%;
+  height: auto;
+  background-image: url("img/background-catalog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filters legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 21px;
+}
+
+.filter-input-checkbox:hover + label {
+  color: var(--basic-black);
+}
+
+.cost legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.cost input {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter-button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.filter-button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.catalog-sort {
+  background-color: var(--basic-white);
+}
+
+.catalog-sort h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.catalog-sort p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.catalog-sort ul {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.catalog-sort-list a:hover {
+  color: var(--basic-blue);
+}
+
+.catalog-sort-list a:focus {
+  color: var(--basic-black);
+}
+
+.catalog {
+  background-color: var(--basic-white);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.catalog-item h3:hover {
+  color: var(--basic-blue);
+}
+
+.catalog-item h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.catalog-item span {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color:var(--special-extragray);
+  background-color: var(--special-darkgray);
+}
+
+.button-detail {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+}
+
+.button-detail:hover {
+  color: var(--basic-white);
+  background-color: var(--special-darkblue);
+}
+
+.button-detail:focus {
+  color: var(--basic-white);
+  background-color: var(--special-extrablue);
+}
+
+.button-reserv {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+}
+
+.button-reserv:hover {
+  color: var(--basic-white);
+  background-color: var(--special-darkbrown);
+}
+
+.button-reserv:focus {
+  background-color: var(--special-extrabrown);
+  color: var(--basic-white);
 }

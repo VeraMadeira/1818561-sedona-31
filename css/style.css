@@ -236,6 +236,10 @@ body {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
+}
+
+.catalog-sort-list a {
+  color: var(--basic-black);
   opacity: 0.3;
 }
 
@@ -245,6 +249,8 @@ body {
 
 .catalog-sort-list a:focus {
   color: var(--basic-black);
+  opacity: 1;
+  text-decoration: none;
 }
 
 .catalog {

@@ -12,7 +12,7 @@
     --special-extragray: #666666;
 }
 
-body {
+.page-body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -24,20 +24,49 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
 }
 
 .main-navigation {
+  display: grid;
   font-weight: 700;
   background-color: var(--basic-white);
 }
 
+.main-header-logo {
+justify-self: center;
+}
+
+.main-navigation-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .welcome {
@@ -60,8 +89,15 @@ body {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
   
+.feature-list-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .feature-item-white {
   line-height: 21px;
   text-align: center;
@@ -78,6 +114,10 @@ body {
 }
 
 .features-list-nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
   list-style: none;
   line-height: 21px;
   text-align: center;
@@ -90,6 +130,11 @@ body {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+}
+
+.features-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
 }
 
 .feature-item {
@@ -129,7 +174,13 @@ body {
   border: none; 
 }
 
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer-contacts {
+  justify-self: center;
   font-size: 21px;
   font-weight: 700;
 }
@@ -140,6 +191,7 @@ body {
 }
 
 .footer-social {
+  justify-self: center;
   text-align: center;
 }
 
@@ -250,7 +302,7 @@ body {
 .catalog-sort-list a:focus {
   color: var(--basic-black);
   opacity: 1;
-  text-decoration: none;
+  border: 1px dashed var(--basic-blue);
 }
 
 .catalog {

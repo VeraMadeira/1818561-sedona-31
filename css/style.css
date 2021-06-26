@@ -13,7 +13,11 @@
 }
 
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   min-width: 1200px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -23,11 +27,7 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  background-color: var(--basic-white); 
 }
 
 .page {
@@ -52,15 +52,23 @@ justify-self: center;
 
 .site-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .site-navigation a {
-  text-decoration: none;
   color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation-left {
+  justify-self: start; 
+}
+
+.site-navigation-right {
+  justify-self: end; 
 }
 
 .container {
@@ -88,17 +96,15 @@ justify-self: center;
 }
 
 .features-list {
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
-}
-  
-.feature-list-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  list-style: none;
 }
 
 .feature-item-white {
+  grid-column: 1 / -1;
   line-height: 21px;
   text-align: center;
   color: var(--basic-white);
@@ -113,11 +119,22 @@ justify-self: center;
   text-align: center;
 }
 
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feature-list-text {
+  grid-column: 1 / 2;
+}
+
+.feature-list-image {
+  grid-column: 2 / 4;
+}
+
 .features-list-nested {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 0;
   list-style: none;
   line-height: 21px;
   text-align: center;
@@ -130,11 +147,6 @@ justify-self: center;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-}
-
-.features-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
 }
 
 .feature-item {
@@ -350,9 +362,9 @@ justify-self: center;
   line-height: 21px;
   font-weight: 700;
   text-align: center;
-  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
+  color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
@@ -371,9 +383,9 @@ justify-self: center;
   line-height: 21px;
   font-weight: 700;
   text-align: center;
-  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
+  color: var(--basic-white);
   background-color: var(--basic-brown);
 }
 
@@ -383,6 +395,6 @@ justify-self: center;
 }
 
 .button-reserv:focus {
-  background-color: var(--special-extrabrown);
   color: var(--basic-white);
+  background-color: var(--special-extrabrown);
 }

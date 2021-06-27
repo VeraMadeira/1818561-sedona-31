@@ -119,17 +119,25 @@ justify-self: center;
   text-align: center;
 }
 
-.feature-list {
+.feature-list-text-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.feature-list-text {
+.feature-list-text-first {
   grid-column: 1 / 2;
 }
 
-.feature-list-image {
+.feature-list-image-first {
   grid-column: 2 / 4;
+}
+
+.feature-list-text-second {
+  grid-column: 3 / 4;
+}
+
+.feature-list-image-second {
+  grid-column: 1 / 3;
 }
 
 .features-list-nested {

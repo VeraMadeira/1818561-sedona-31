@@ -33,8 +33,7 @@
             <h2 >Фильтр</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
             <div class="filters-columns">
-              <div>
-                <fieldset>
+              <fieldset class="filters-columns-infrastructure">
                 <legend>Инфраструктура:</legend>
                   <ul>
                     <li class="filter-option filter-checkbox">
@@ -50,10 +49,8 @@
                       <label for="filter-wifi">WI-FI</label>
                     </li>
                   </ul>
-                </fieldset>
-              </div>
-              <div>
-                <fieldset>
+              </fieldset>
+              <fieldset class="filters-columns-house">
                 <legend>Тип жилья:</legend>
                   <ul>
                     <li class="filter-option filter-checkbox">
@@ -69,10 +66,8 @@
                       <label for="filter-apartments">Апартаменты</label>
                     </li>
                   </ul>
-                </fieldset>
-              </div>
-              <div>
-                <fieldset class="cost">
+              </fieldset>
+              <fieldset class="cost">
                 <legend>Стоимость в сутки, ₽:</legend>
                 <p>
                   <label for="appointment-min">от</label>
@@ -80,13 +75,10 @@
                   <label for="appointment-max">до</label>
                   <input id="appointment-max" type="text" name="max" placeholder="3000">
                 </p>
-                </fieldset>
-                <div>
-                  <button type="submit">Меньше</button>
-                  <button type="submit">Больше</button>
-                </div>
-              <button type="submit" class="filter-button">Показать</button>
-              </div>
+                <button type="button">Меньше</button>
+                <button type="button">Больше</button>
+                <p><button type="submit" class="filter-button">Показать</button></p>
+              </fieldset>
               </div>
             </form>
           </section>
@@ -118,48 +110,51 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="catalog-item-image">
-                <a href="hotel.html">
-                  <h3>Amara Resort & Spa</h3>
+                  <a href="hotel.html">
                     <img src="img/content/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
                 </a>
                 </div>
                 <div class="catalog-item-text">
-                <p>Гостиница</p>
-                  от 4000 ₽
+                    <a href="hotel.html">
+                      <h3>Amara Resort & Spa</h3>
+                    </a>
+                <p>Гостиница от 4000 ₽</p>
                   <a class="button-detail" href="#">Подробнее</a>
                   <a class="button-reserv" href="#">Забронировать</a>
                 </div>
                 <div class="catalog-item-star">
                 <span>Рейтинг: 8,5</span>
                 </div>
-              </li>      
+              </li>
               <li class="catalog-item">
                 <div class="catalog-item-image">
                 <a href="hotel.html">
-                  <h3>Desert Quail Inn</h3>
                     <img src="img/content/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
                 </a>
               </div>
               <div class="catalog-item-text">
-                <p>Мотель</p>
-                  от 3000 ₽
+                <a href="hotel.html">
+                  <h3>Desert Quail Inn</h3>
+                </a>
+                <p>Мотель от 3000 ₽</p>
                   <a class="button-detail" href="#">Подробнее</a>
                   <a class="button-reserv" href="#">Забронировать</a>
-                </div>
-                <div class="catalog-item-star">
+              </div>
+              <div class="catalog-item-star">
                 <span>Рейтинг: 8,9</span>
               </div>
-              </li>   
+              </li>
               <li class="catalog-item">
                 <div class="catalog-item-image">
                 <a href="hotel.html">
-                  <h3>Villas at Poco Diablo</h3>
                     <img src="img/content/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                 </a>
               </div>
               <div class="catalog-item-text">
-                <p>Апартаменты</p>
-                  от 2000 ₽
+                <a href="hotel.html">
+                  <h3>Villas at Poco Diablo</h3>
+                </a>
+                <p>Апартаменты от 2000 ₽</p>
                   <a class="button-detail" href="#">Подробнее</a>
                   <a class="button-reserv" href="#">Забронировать</a>
               </div>
@@ -189,12 +184,12 @@
           </li>
         </ul>
       </section>
-      <p class="footer-copyright">
+      <section class="footer-copyright">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="Перейти страницу разработчика сайта">
         </a> 
-      </p>
+      </section>
     </footer>
   </body>
 </html>

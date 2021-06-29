@@ -211,7 +211,7 @@
 }
 
 .footer-social {
-  width: 150px;
+  width: 200px;
   justify-self: center;
   text-align: center;
 }
@@ -226,6 +226,12 @@
 
 .social-button {
   background-color: var(--basic-blue);
+}
+
+.footer-social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-copyright {

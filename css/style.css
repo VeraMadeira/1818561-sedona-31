@@ -324,24 +324,48 @@
 
 .catalog-sort {
   grid-column: 1 / -1;
-  margin-left: 73px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: var(--basic-white);
 }
 
 .catalog-sort h3 {
+  margin-left: 73px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .catalog-sort p {
+  margin: 0;
+  padding: 0;
+  margin-left: 46px;
+  margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
 }
 
 .catalog-sort ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
+}
+
+.catalog-sort-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 239px;
+}
+
+.catalog-sort-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 503px;
+  width: 200px;
 }
 
 .catalog-sort-list a {
@@ -396,7 +420,8 @@
   text-decoration: none;
 }
 
-.catalog-item h3 {
+.catalog-item-text h3 {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
 }

@@ -941,9 +941,11 @@
 
 .price-min label,
 .price-max label {
+  position: absolute;
   display: inline-block;
   width: 159px;
-  font: inherit;
+  line-height: 21px;
+  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -951,18 +953,31 @@
 
 .price-min input,
 .price-max input {
-  margin: 0;
+  margin-top: -2px;
+  margin-left: 5px;
   padding: 0;
   width: 41px;
   font: inherit;
-  text-align: center;
+  line-height: 21px;
   vertical-align: middle;
-  color: var(--basic-white);
   text-transform: uppercase;
-  background: transparent;
+  color: var(--basic-white);
+  background: none;
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+}
+
+.price-min {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+}
+
+.price-max {
+  position: absolute;
+  top: 4px;
+  left: 167px;
 }
 
 .price-controls::after {
@@ -984,12 +999,12 @@
 
 .range-controls .scale {
   height: 2px;
-  background-color: var(--basic-white);
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 78%;
+  order: 1;
+  width: 80%;
   height: 2px;
   background-color: var(--basic-white);
 }
@@ -1011,7 +1026,7 @@
 }
 
 .range-controls .toggle-max {
-  left: 248px;
+  left: 255px;
 }
 
 .range-filter p {

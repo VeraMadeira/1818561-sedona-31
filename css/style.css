@@ -407,19 +407,18 @@
 .search-hotel h2 {
   margin: 0;
   padding: 0;
-  padding: 58px 457px 34px 446px;
+  margin-top: 58px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
 }
 
 .search-hotel p {
   width: 435px;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 45px;
   padding: 0;
-  padding-bottom: 44px;
-  padding-left: 383px;
   color: var(--basic-black);
 }
 
@@ -455,7 +454,7 @@
 
 .modal {
   position: absolute;
-  top: 294px;
+  top: 232px;
   left: 315px;
   width: 458px;
   margin: auto;

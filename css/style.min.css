@@ -409,6 +409,7 @@
   padding: 0;
   margin-top: 58px;
   padding-bottom: 30px;
+  padding-right: 10px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
@@ -508,7 +509,9 @@
 .form-date-out input[type="text"] {
   width: 346px;
   padding: 6px 200px 6px 13px;
-  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--special-darkgray);
@@ -570,7 +573,9 @@
   left: 150px;
   width: 36px;
   height: 38px;
-  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
   text-align: center;
   vertical-align: middle;
   color: var(--basic-black);
@@ -1257,6 +1262,8 @@
 
 .catalog-item-text span {
   margin-left: 18px;
+  font-size: 14px;
+  line-height: 21px;
   color: var(--special-black);
 }
 
